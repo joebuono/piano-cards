@@ -17,10 +17,11 @@ p {
     color: white;
     text-align: center;
     font-family: arial;
+    font-size: large;
 }
 
-button {
-    margin: auto;
+.button {
+    text-align: center;
 }
 
 .piano {
@@ -35,8 +36,12 @@ button {
     height: 320px;
 }
 
-.white.active {
-    background-color: #CCC;
+.white.correct {
+    background-color: green;
+}
+
+.white.wrong {
+    background-color: red;
 }
 
 .black {
@@ -48,13 +53,17 @@ button {
     z-index: 2;
 }
 
-.black.active {
-    background-color: #333;
+.black.correct {
+    background-color: green;
+}
+
+.black.wrong {
+    background-color: red;
 }
 
 .container {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: auto;
     background: #fff;
     position: relative;
@@ -71,10 +80,27 @@ button {
     transform: translateY(-50%);
 }
 
-.container.correct {
-    background: green;
+h2 {
+    color: white;
+    text-align: center;
+    font-family: arial;
+    font-size: large;
 }
 
-.container.incorrect {
-    background: red;
+h3 {
+    color: yellow;
+    text-align: center;
+    font-family: arial;
+    font-size: large;
 }
+
+#myProgress {
+  width: 69%;
+  background-color: grey;
+}
+
+#myBar {
+  height: 30px;
+  background-color: green;
+}
+
